@@ -1,0 +1,25 @@
+lib: [
+  "_build/install/default/lib/hardcaml_custom_handshake/META"
+  "_build/install/default/lib/hardcaml_custom_handshake/dune-package"
+  "_build/install/default/lib/hardcaml_custom_handshake/handshake.ml"
+  "_build/install/default/lib/hardcaml_custom_handshake/handshake.mli"
+  "_build/install/default/lib/hardcaml_custom_handshake/handshake_intf.ml"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.a"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.cma"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.cmi"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.cmt"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.cmx"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.cmxa"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.ml"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake.cmi"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake.cmt"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake.cmti"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake.cmx"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake_intf.cmi"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake_intf.cmt"
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake__Handshake_intf.cmx"
+  "_build/install/default/lib/hardcaml_custom_handshake/opam"
+]
+libexec: [
+  "_build/install/default/lib/hardcaml_custom_handshake/hardcaml_custom_handshake.cmxs"
+]

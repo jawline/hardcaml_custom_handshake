@@ -1,0 +1,95 @@
+(lang dune 3.18)
+(name hardcaml_custom_handshake)
+(sections (lib .) (libexec .))
+(files
+ (lib
+  (META
+   dune-package
+   handshake.ml
+   handshake.mli
+   handshake_intf.ml
+   hardcaml_custom_handshake.a
+   hardcaml_custom_handshake.cma
+   hardcaml_custom_handshake.cmi
+   hardcaml_custom_handshake.cmt
+   hardcaml_custom_handshake.cmx
+   hardcaml_custom_handshake.cmxa
+   hardcaml_custom_handshake.ml
+   hardcaml_custom_handshake__Handshake.cmi
+   hardcaml_custom_handshake__Handshake.cmt
+   hardcaml_custom_handshake__Handshake.cmti
+   hardcaml_custom_handshake__Handshake.cmx
+   hardcaml_custom_handshake__Handshake_intf.cmi
+   hardcaml_custom_handshake__Handshake_intf.cmt
+   hardcaml_custom_handshake__Handshake_intf.cmx
+   opam))
+ (libexec (hardcaml_custom_handshake.cmxs)))
+(library
+ (name hardcaml_custom_handshake)
+ (kind normal)
+ (archives
+  (byte hardcaml_custom_handshake.cma)
+  (native hardcaml_custom_handshake.cmxa))
+ (plugins
+  (byte hardcaml_custom_handshake.cma)
+  (native hardcaml_custom_handshake.cmxs))
+ (native_archives hardcaml_custom_handshake.a)
+ (requires
+  hardcaml
+  core
+  basement
+  ppx_sexp_conv.runtime-lib
+  sexplib0
+  ppx_here.runtime-lib
+  ppx_compare.runtime-lib
+  ppx_assert.runtime-lib
+  ppx_enumerate.runtime-lib
+  ppx_hash.runtime-lib
+  ppx_bench.runtime-lib
+  bin_prot
+  ppx_inline_test.config
+  ppx_inline_test.runtime-lib
+  ppx_expect.runtime
+  ppx_expect.config
+  fieldslib
+  ppx_string.runtime
+  ppx_log.types
+  ppx_log.syntax
+  ppx_module_timer.runtime
+  base_quickcheck.ppx_quickcheck.runtime
+  base_quickcheck
+  ppx_stable_witness.runtime
+  base
+  ppx_typed_fields.typed_fields_lib
+  ppx_typed_fields.typed_variants_lib
+  sexplib
+  typerep
+  variantslib
+  ppx_hardcaml.runtime
+  ppx_deriving.runtime)
+ (main_module_name Hardcaml_custom_handshake)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name hardcaml_custom_handshake)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Hardcaml_custom_handshake)
+      (impl (path hardcaml_custom_handshake.ml-gen))))
+    (name Hardcaml_custom_handshake)
+    (modules
+     (module
+      (obj_name hardcaml_custom_handshake__Handshake)
+      (visibility public)
+      (source
+       (path Handshake)
+       (intf (path handshake.mli))
+       (impl (path handshake.ml))))
+     (module
+      (obj_name hardcaml_custom_handshake__Handshake_intf)
+      (visibility public)
+      (source (path Handshake_intf) (impl (path handshake_intf.ml))))))
+   (wrapped true))))
